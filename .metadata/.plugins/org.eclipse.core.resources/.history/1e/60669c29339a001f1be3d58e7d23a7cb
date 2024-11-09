@@ -1,0 +1,19 @@
+package gerenciadorEscola;
+
+public class Enderecos {
+	//ATRIBUROS
+	private String cidade;
+	private String bairro;
+	private String rua;
+	private int numero;
+	
+	//CONSTRUTOR
+	public Enderecos(String cidade, String bairro, String rua, int numero) {
+		this.cidade = cidade;
+		this.bairro = bairro;
+		this.rua = rua;
+		this.numero = numero;
+	}
+	
+	
+}

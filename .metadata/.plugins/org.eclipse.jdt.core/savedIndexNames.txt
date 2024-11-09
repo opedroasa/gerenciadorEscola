@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\Pedro\Desktop\Faculdade Pedro\POO l\gerenciadorEscola\.metadata\.plugins\org.eclipse.jdt.core
+3973302175.index
+1865797976.index
+3803894794.index

@@ -6,15 +6,13 @@ public class Disciplinas {
 	private String nome;
 	private int cargaHoraria;
 	private int codigo;
-	private ArrayList <Professores> professores;
 	
 	//CONSTRUTOR
-	public Disciplinas(String nome, int cargaHoraria, int codigo, ArrayList<Professores> professores) {
+	public Disciplinas(String nome, int cargaHoraria, int codigo) {
 		super();
 		this.nome = nome;
 		this.cargaHoraria = cargaHoraria;
-		this.codigo = codigo;
-		this.professores = professores;
+		this.codigo = codigo; 
 	}
 
 	//METODOS
@@ -41,15 +39,6 @@ public class Disciplinas {
 	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
-
-	public ArrayList<Professores> getProfessores() {
-		return professores;
-	}
-
-	public void setProfessores(ArrayList<Professores> professores) {
-		this.professores = professores;
-	}
-	
 	
 }
 

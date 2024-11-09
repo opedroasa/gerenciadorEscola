@@ -1,0 +1,14 @@
+package gerenciadorEscola;
+import java.util.ArrayList;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		Alunos objArthur = new Alunos();
+		
+		objArthur.cadastrarAluno(null, null, null, null, 0, 0, null);
+
+	}
+
+}

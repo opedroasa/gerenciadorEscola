@@ -1,0 +1,8 @@
+package gerenciadorEscola;
+
+public class Notas {
+	private double valor;
+	private String data;
+	private Alunos aluno;
+	private Disciplinas disciplina;
+}
