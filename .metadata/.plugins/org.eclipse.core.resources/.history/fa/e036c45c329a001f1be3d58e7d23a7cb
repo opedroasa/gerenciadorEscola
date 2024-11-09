@@ -1,0 +1,11 @@
+package gerenciadorEscola;
+import java.util.ArrayList;
+
+public class Disciplinas {
+	private String nome;
+	private int cargaHoraria;
+	private int codigo;
+	private ArrayList <Professores> professores;
+}
+
+

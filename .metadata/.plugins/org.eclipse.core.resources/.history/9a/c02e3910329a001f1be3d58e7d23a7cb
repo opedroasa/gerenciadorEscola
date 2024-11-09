@@ -1,0 +1,9 @@
+package gerenciadorEscola;
+import java.util.ArrayList;
+
+public class Professores extends Pessoas implements gerenciadorProfessor {
+	private String areaFormacao;
+	private int anoAdmissao;
+	private String email;
+	private ArrayList<Disciplinas> disciplinas;
+}

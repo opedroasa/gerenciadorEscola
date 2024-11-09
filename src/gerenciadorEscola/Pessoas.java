@@ -9,7 +9,6 @@ public abstract class Pessoas {
 	
 	//CONSTRUTOR
 	public Pessoas(String nome, String dataNascimento, String telefone, Enderecos endereco) {
-		super();
 		this.nome = nome;
 		this.dataNascimento = dataNascimento;
 		this.telefone = telefone;

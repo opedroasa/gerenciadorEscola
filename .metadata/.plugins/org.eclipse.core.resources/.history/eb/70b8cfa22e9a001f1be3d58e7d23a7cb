@@ -1,0 +1,18 @@
+package gerenciadorEscola;
+
+public abstract class Pessoas {
+	private String nome;
+	private String dataNascimento;
+	private String telefone;
+	private Enderecos endereco;
+	
+	public Pessoas(String nome, String dataNascimento, String telefone, Enderecos endereco) {
+		super();
+		this.nome = nome;
+		this.dataNascimento = dataNascimento;
+		this.telefone = telefone;
+		this.endereco = endereco;
+	}
+	
+	
+}

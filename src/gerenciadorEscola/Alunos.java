@@ -10,11 +10,11 @@ public class Alunos extends Pessoas implements gerenciadorAluno {
 	
 	//CONSTRUTOR
 	public Alunos(String nome, String dataNascimento, String telefone, Enderecos endereco, int matricula,
-			int anoIngresso, ArrayList<Notas> notas, Turmas turma) {
+			int anoIngresso) {
 		super(nome, dataNascimento, telefone, endereco);
 		this.matricula = matricula;
 		this.anoIngresso = anoIngresso;
-		this.notas = notas;
+		ArrayList<Notas> notas = new ArrayList<Notas>(); 
 	}
 	
 	public Alunos()
@@ -59,7 +59,5 @@ public class Alunos extends Pessoas implements gerenciadorAluno {
 	public void setNotas(ArrayList<Notas> notas) {
 		this.notas = notas;
 	}
-	
-	
 
 }

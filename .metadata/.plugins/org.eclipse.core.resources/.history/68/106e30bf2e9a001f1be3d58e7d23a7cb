@@ -1,0 +1,12 @@
+package gerenciadorEscola;
+import java.util.ArrayList;
+
+public class Alunos extends Pessoas implements gerenciadorAluno {
+	private int matricula;
+	private int anoIngresso;
+	private ArrayList<Notas> notas;
+	private Turmas turma;
+	
+	
+
+}

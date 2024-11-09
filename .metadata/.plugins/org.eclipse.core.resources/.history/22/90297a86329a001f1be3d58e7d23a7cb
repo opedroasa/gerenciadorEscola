@@ -1,0 +1,14 @@
+package gerenciadorEscola;
+import java.util.ArrayList;
+
+public class Turmas {
+	//ATRIBUTOS
+	private String nome;
+	private ArrayList<Alunos> alunos;
+	private int codigo;
+	private Disciplinas disciplina;
+	private Professores professor;
+	private int anoLetivo;
+	
+	
+}
