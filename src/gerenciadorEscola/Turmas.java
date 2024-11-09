@@ -3,33 +3,35 @@ import java.util.ArrayList;
 
 public class Turmas {
 	//ATRIBUTOS
-	private String nome;
 	private ArrayList<Alunos> alunos;
-	private int codigo;
+	private String codigo;
 	private Disciplinas disciplina;
 	private Professores professor;
 	private int anoLetivo;
 	
 	//CONSTRUTOR
-	public Turmas(String nome, ArrayList<Alunos> alunos, int codigo, Disciplinas disciplina, Professores professor,
+	public Turmas(ArrayList<Alunos> alunos, String codigo, Disciplinas disciplina, Professores professor,
 			int anoLetivo) {
 		super();
-		this.nome = nome;
 		this.alunos = alunos;
 		this.codigo = codigo;
 		this.disciplina = disciplina;
 		this.professor = professor;
 		this.anoLetivo = anoLetivo;
 	}
+	
+	public Turmas(String codigo, Disciplinas disciplina, Professores professor,
+			int anoLetivo) {
+		super();
+		this.codigo = codigo;
+		this.disciplina = disciplina;
+		this.professor = professor;
+		this.anoLetivo = anoLetivo;
+		ArrayList<Alunos> alunos = new ArrayList<Alunos>();
+		
+	}
 
 	//METODOS
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
 
 	public ArrayList<Alunos> getAlunos() {
 		return alunos;
@@ -39,11 +41,11 @@ public class Turmas {
 		this.alunos = alunos;
 	}
 
-	public int getCodigo() {
+	public String getCodigo() {
 		return codigo;
 	}
 
-	public void setCodigo(int codigo) {
+	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
 
@@ -71,5 +73,9 @@ public class Turmas {
 		this.anoLetivo = anoLetivo;
 	}
 	
+	public void addAluno (Alunos aluno)
+	{
+		this.alunos.add(aluno);
+	}
 
 }

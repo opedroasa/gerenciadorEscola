@@ -18,6 +18,15 @@ public class Professores extends Pessoas implements gerenciadorProfessor {
 		this.disciplinas = disciplinas;
 	}
 	
+	public Professores(String nome, String dataNascimento, String telefone, Enderecos endereco, String areaFormacao,
+			int anoAdmissao, String email) {
+		super(nome, dataNascimento, telefone, endereco);
+		this.areaFormacao = areaFormacao;
+		this.anoAdmissao = anoAdmissao;
+		this.email = email;
+		ArrayList<Disciplinas> disciplinas = new ArrayList<Disciplinas>(); 
+	}
+	
 	public Professores()
 	{
 		super();
@@ -68,6 +77,11 @@ public class Professores extends Pessoas implements gerenciadorProfessor {
 
 	public void setDisciplinas(ArrayList<Disciplinas> disciplinas) {
 		this.disciplinas = disciplinas;
+	}
+	
+	public void addDisciplina(Disciplinas disciplina)
+	{
+		this.disciplinas.add(disciplina);
 	}
 	
 	

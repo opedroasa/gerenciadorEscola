@@ -7,6 +7,7 @@ public class Alunos extends Pessoas implements gerenciadorAluno {
 	private int matricula;
 	private int anoIngresso;
 	private ArrayList<Notas> notas;
+	private Turmas turma;
 	
 	//CONSTRUTOR
 	public Alunos(String nome, String dataNascimento, String telefone, Enderecos endereco, int matricula,
@@ -58,6 +59,11 @@ public class Alunos extends Pessoas implements gerenciadorAluno {
 
 	public void setNotas(ArrayList<Notas> notas) {
 		this.notas = notas;
+	}
+	
+	public void addTurma(Turmas turma)
+	{
+		this.turma = turma;
 	}
 
 }
