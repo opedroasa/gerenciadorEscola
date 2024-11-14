@@ -27,7 +27,13 @@ public class Turmas {
 		this.disciplina = disciplina;
 		this.professor = professor;
 		this.anoLetivo = anoLetivo;
-		ArrayList<Alunos> alunos = new ArrayList<Alunos>();
+		alunos = new ArrayList<Alunos>();
+		
+	}
+	
+	public Turmas() {
+		super();
+		alunos = new ArrayList<Alunos>();
 		
 	}
 
@@ -76,6 +82,10 @@ public class Turmas {
 	public void addAluno (Alunos aluno)
 	{
 		this.alunos.add(aluno);
+	}
+	
+	public String toString() {
+        return codigo + "\n" + disciplina.getNome() + "\n" + professor.getNome() + "\n" + anoLetivo;
 	}
 
 }
