@@ -49,7 +49,9 @@ public class Notas {
 		this.disciplina = disciplina;
 	}
 	
-	
+	public String toString() {
+        return valor + "\n" + data + "\n" + aluno.getNome() + "\n" + disciplina.getNome();
+	}
 	
 	
 }

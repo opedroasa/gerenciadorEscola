@@ -48,6 +48,8 @@ public class Enderecos {
 		this.numero = numero;
 	}
 	
-	
+	public String toString() {
+        return cidade + "\n" + bairro + "\n" + rua + "\n" + numero;
+	}
 	
 }

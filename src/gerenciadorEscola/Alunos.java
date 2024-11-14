@@ -15,7 +15,7 @@ public class Alunos extends Pessoas implements gerenciadorAluno {
 		super(nome, dataNascimento, telefone, endereco);
 		this.matricula = matricula;
 		this.anoIngresso = anoIngresso;
-		ArrayList<Notas> notas = new ArrayList<Notas>(); 
+		notas = new ArrayList<Notas>(); 
 	}
 	
 	public Alunos()
@@ -44,7 +44,10 @@ public class Alunos extends Pessoas implements gerenciadorAluno {
 	public void setMatricula(int matricula) {
 		this.matricula = matricula;
 	}
-
+	
+	public Turmas getTurma() {
+		return turma;
+	}
 	public int getAnoIngresso() {
 		return anoIngresso;
 	}
@@ -65,5 +68,12 @@ public class Alunos extends Pessoas implements gerenciadorAluno {
 	{
 		this.turma = turma;
 	}
-
+	
+	
+	public String toString() {
+        return super.getNome() + "\n" + super.getDataNascimento() + "\n" + 
+        super.getTelefone() + "\n" + super.getEndereco().toString() + "\n" +
+        matricula + "\n" + anoIngresso + "\n" + turma.getCodigo();
+	}
+	
 }

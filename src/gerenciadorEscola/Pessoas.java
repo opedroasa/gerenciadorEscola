@@ -15,6 +15,12 @@ public abstract class Pessoas {
 		this.endereco = endereco;
 	}
 	
+	public Pessoas(String nome, String dataNascimento, String telefone) {
+		this.nome = nome;
+		this.dataNascimento = dataNascimento;
+		this.telefone = telefone;
+	}
+	
 	public Pessoas ()
 	{
 		
